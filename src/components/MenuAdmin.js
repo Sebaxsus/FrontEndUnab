@@ -8,7 +8,7 @@ import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 import Cookies from "universal-cookie";
 //require('dotenv').config()
 
-const url =process.env.REACT_URL_EVENTOS
+const url =process.env.REACT_APP_EVENTOS
 const cookies = new Cookies();
 
 class MenuAdmin extends Component {
