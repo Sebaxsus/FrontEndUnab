@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faL, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 import Cookies from "universal-cookie";
+//require('dotenv').config()
 
 const url =process.env.REACT_URL_EVENTOS
 const cookies = new Cookies();

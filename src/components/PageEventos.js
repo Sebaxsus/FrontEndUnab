@@ -4,9 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
+//require('dotenv').config()
 
-const url=process.env.REACT_URL_EVENTOS
-const field_id=process.env.EVE_C
+const url='https://backend-deportes-production.up.railway.app/api/eventos'
+const field_id='eve_id'
 
 class PageEventos extends Component{
     state={
@@ -17,14 +18,12 @@ class PageEventos extends Component{
         form:{
           eve_id:'',
           eve_fecha:'',
-          //reg_fecha:'',
           equ_equipo1:'',
           equ_equipo2:'',
           eve_marca1:'',
           eve_marca2:'',
           dep_id:'',
           eve_descrip:''
-          //usu_id:''
         }
       }
       

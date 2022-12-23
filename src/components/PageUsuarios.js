@@ -4,10 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
+//require('dotenv').config()
 
 
 
-const url=process.env.REACT_URL_USUARIOS
+const url='https://backend-deportes-production.up.railway.app/api/usuarios'
 const field_id=process.env.USU_C
 
 class PageUsuarios extends Component{

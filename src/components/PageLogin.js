@@ -3,8 +3,9 @@ import { Component } from "react"
 import '../css/Login.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Cookies from "universal-cookie"
+//require('dotenv').config()
 
-const urlLogin=process.env.REACT_URL_USUARIOS
+const urlLogin='https://backend-deportes-production.up.railway.app/api/usuarios'
 
 const cookies = new Cookies();
 

@@ -13,6 +13,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import MenuInicio from './components/MenuInicio';
 import PageLogin from './components/PageLogin';
 import Cookies from "universal-cookie";
+//require('dotenv').config()
 
 const cookies = new Cookies();
 
