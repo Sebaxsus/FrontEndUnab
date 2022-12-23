@@ -6,8 +6,8 @@ import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 //require('dotenv').config()
 
-const url=process.env.REACT_URL_EQUIPOS
-const field_id=process.env.EQU_C
+const url='https://backend-deportes-production.up.railway.app/api/eventos'
+const field_id='eve_id'
 
 class PageEquipos extends Component{
     state={
