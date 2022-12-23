@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Cookies from "universal-cookie"
 //require('dotenv').config()
 
-const urlLogin='https://backend-deportes-production.up.railway.app/api/usuarios'
+const urlLogin=process.env.REACT_APP_USUARIOS
 
 const cookies = new Cookies();
 
