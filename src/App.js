@@ -47,7 +47,7 @@ class App extends Component{
     <div className="App">
       <>
         <Router>
-            <MenuInicio />
+            <MenuAdmin />
         <Routes>
           <Route path='/' element={<PageInicio />} />
           <Route path='/PageInicio' element={<PageInicio />} />

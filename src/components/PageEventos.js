@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
-const url='http://localhost:9000/api/eventos'
-const field_id='eve_id'
+const url=process.env.REACT_URL_EVENTOS
+const field_id=process.env.EVE_C
 
 class PageEventos extends Component{
     state={

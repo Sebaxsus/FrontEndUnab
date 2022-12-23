@@ -7,8 +7,8 @@ import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
 
 
-const url='http://localhost:9000/api/usuarios'
-const field_id='usu_id'
+const url=process.env.REACT_URL_USUARIOS
+const field_id=process.env.USU_C
 
 class PageUsuarios extends Component{
 state={
@@ -21,8 +21,8 @@ state={
     usu_email:'',
     usu_clave:'',
     usu_nombres:'',
-    usu_apellidos:''
-    //usu_rol:""
+    usu_apellidos:'',
+    usu_rol:""
   }
 }
 
@@ -90,8 +90,8 @@ seleccionarUsuario=(usuario)=>{
       usu_email: usuario.usu_email,
       usu_clave: usuario.usu_clave,
       usu_nombres: usuario.usu_nombres,
-      usu_apellidos: usuario.usu_apellidos
-      //usu_rol:usuario.usu_rol
+      usu_apellidos: usuario.usu_apellidos,
+      usu_rol:usuario.usu_rol
     }
   })
 }
@@ -117,6 +117,7 @@ render(){
             <th>Clave</th>
             <th>Nombre</th>
             <th>Apellido</th>
+            <th>Rol</th>
             <th>Acciones</th>
           </tr>
         </thead>
@@ -130,6 +131,7 @@ render(){
                 <td>{usuarios.usu_clave}</td>
                 <td>{usuarios.usu_nombres}</td>
                 <td>{usuarios.usu_apellidos}</td>
+                <td>{usuarios.usu_rol}</td>
                 <td>
                   <button className='btn btn-primary' onClick={()=>{this.seleccionarUsuario(usuarios);this.modalInsertar()}}><FontAwesomeIcon icon={faEdit}></FontAwesomeIcon></button>
                   {"   "}

@@ -52,7 +52,7 @@ class MenuInicio extends Component {
     cookies.remove("usu_clave",{path:"/"})
     cookies.remove("usu_nomrbes",{path:"/"})
     cookies.remove("usu_apellidos",{path:"/"})
-    //cookies.remove("usu_rol",{path:"/"})
+    cookies.remove("usu_rol",{path:"/"})
     this.setState({estaLogin:false})
   }
 

@@ -4,7 +4,7 @@ import '../css/Login.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Cookies from "universal-cookie"
 
-const urlLogin="http://localhost:9000/api/usuarios"
+const urlLogin=process.env.REACT_URL_USUARIOS
 
 const cookies = new Cookies();
 
@@ -15,6 +15,7 @@ class PageLogin extends Component {
             password: ''
         }
     }
+    
 
     handleChange=async e=>{
         await this.setState({
@@ -44,7 +45,7 @@ class PageLogin extends Component {
                 cookies.set("usu_clave",resp.usu_clave,{path:"/"})
                 cookies.set("usu_nombres",resp.usu_nombres,{path:"/"})
                 cookies.set("usu_apellidos",resp.usu_apellidos,{path:"/"})
-                //cookies.set("usu_id",resp.usu_rol,{path:"/"})
+                cookies.set("usu_rol",resp.usu_rol,{path:"/"})
                 alert("Bienvenid@ "+resp.usu_nombres)
 
                 window.location.href='./'

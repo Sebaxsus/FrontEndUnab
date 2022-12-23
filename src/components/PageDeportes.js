@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
-const url='http://localhost:9000/api/deportes'
-const field_id='dep_id'
+const url=process.env.REACT_URL_DEPORTES
+const field_id=process.env.DEP_C
 
 class PageDeportes extends Component{
     state={

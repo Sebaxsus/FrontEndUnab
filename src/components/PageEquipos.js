@@ -1,3 +1,4 @@
+require('dotenv').config()
 import React, { Component } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -5,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
-const url='http://localhost:9000/api/equipos'
-const field_id='equ_id'
+const url=process.env.REACT_URL_EQUIPOS
+const field_id=process.env.EQU_C
 
 class PageEquipos extends Component{
     state={
