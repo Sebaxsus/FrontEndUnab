@@ -9,7 +9,7 @@ import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
 
 const url='https://backend-deportes-production.up.railway.app/api/usuarios'
-const field_id=process.env.USU_C
+const field_id='usu_id'
 
 class PageUsuarios extends Component{
 state={
